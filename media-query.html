@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           h1{
+            color:red;
+            font-size:100px;
+            text-align:center;
+           }
+           #Service{
+               width:80%;
+               margin:auto;
+               display:grid;
+               grid-template-columns:auto auto auto auto;
+           }
+           #Service div{
+                   font-size:30px;
+                   color: blue;
+                   margin:30px 0px 30px;
+
+           }
+             ul{
+               background-color: purple;
+               margin:0px;
+
+             }
+             ul li{
+               padding:15px 40px 15px;
+               color:white;
+               font-size:22px;
+               display:inline-block;
+
+             }
+
+             /* media query start for extra small device*/
+             @media screen and (min-width:1px) and (max-width:600px)
+             {
+                h1{ color:greenyellow; font-size:30px;}
+                #Service{
+                  grid-template-columns:auto;
+                }
+                ul li{
+                  padding:10px 5px 10px;
+                }
+             }
+               /* media query start for  small device*/
+               @media screen and (min-width:600px) and (max-width:800px)
+             {
+                h1{ color:green; font-size:45px;}
+                #Service{
+                  grid-template-columns: auto auto;
+                }
+                ul li{
+                  padding:10px 8px 10px;
+                }
+             }
+               /* media query start for medium device*/
+               @media screen and (min-width:800px) and (max-width:1000px)
+             {
+                h1{ color:pink; font-size:80px;}
+                #Service{
+                  grid-template-columns: auto auto auto ;
+
+             }
+               /* media query start forlarge  device*/
+               @media screen and (min-width:1100px) and (max-width:1400px)
+             {
+                h1{ color:red; font-size:30px;}
+             }
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+         <li>Home </li>
+         <li> Service </li>
+         <li> Contact </li>
+         <li> Project </li>
+         <li> login </li>
+         </ul>
+        <h1> Welcome To Media Query </h1>
+        <section id="Service">
+            <div> software development </div>
+            <div> Marketing </div>
+            <div> Business Branding </div>
+            <div> Hire and Deploy </div>
+            <div> Employment </div>
+            <div> Website Design </div>
+            <div> web hosting </div>
+            <div> Email marketing </div>
+            <div> SMS marketing</div>
+            <div> social media marketing </div>
+            <div> Google marketing</div>
+            <div> BPO & call center </div>
+        </section>
+    </body>
+</html>

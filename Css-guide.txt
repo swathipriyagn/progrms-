@@ -1,0 +1,308 @@
+HTML-It has collections of tags with limited property and values.
+CSS - Cascading style sheet.
+    - It has collections of only property and values.
+    - The css use to change look and feel of webpage.
+    
+
+ Responsive webpage = HTML(tags) + CSS(property and values )   
+
+Type Of CSS
+   => Inline CSS
+   => Internal CSS
+   => External CSS 
+
+
+Syntax for Inline -css:
+      <tagname style="property1:value; property2:value; property3:value;"> Text Data </tagname>
+
+
+Example:
+    
+    <p style="height:300px; width:500px; background:red;">WElcome to CSS </p>
+
+    About inline CSS:
+    -> it is one to one(write css code 1 time and use only 1 time )
+       Due to 1 to 1 the code duplicate will happend 
+       duplicate code has following problems 
+          1.complex to modify
+          2.file become heavy
+          3.heavy file take long time to load
+          4.slow page loading may load to bad user experience.
+          5.heavy file comsume more internet data.
+      ---> google  Search engine reject the page from indexing.
+--------------------------------------------------------------------------------------
+About Internal CSS:::
+       --> It is one to many.(write css code 1 time and use in html unlimited time )
+       --> The CSS has following ways to write 1 to many 
+
+          1. CSS for tag Selector
+  Example :::::
+         div{
+                font-size:30px;
+                text-align:center;
+                margin:1%;
+                width:30%;
+                height:200px;
+                background:orange;
+                float:left;
+            
+             }
+-------------------------------------------------------------------------------------------------------
+          2.CSS for tag group selector 
+   Example:::::
+           <style>
+             body{background:green }
+
+               h1,div,b{
+              color:white;
+                font-style: italic;
+
+             }
+             p, h2, h3, label{
+                color:orange;
+                font-size:50px;
+             }
+        </style>
+----------------------------------------------------------------------------------------------------        
+          3.CSS for tag id selector
+   Example:::
+           <style>
+              #block1{
+                background:orange;
+                height:100px;
+
+              }
+              #block2{
+                background:lightgreen;
+                height:400px;
+                
+              }
+              #block3{
+                background:skyblue;
+                height:150px;
+                
+              }
+        </style>
+        NOte: if in a page 1 type of design is required only 1 time.
+-------------------------------------------------------------------------------------------------------
+     4. CSS for class selector
+          Example:::
+            .service{
+                height:200px;
+                width:300px;
+                background: lightgreen;
+                color:white;
+                font-size:50px;
+                text-align: center;
+                margin: 30px;
+                float:left;
+            }
+      Note: If in a page 1 type of design is required many times.
+-------------------------------------------------------------------------------------------------------  
+   5. CSS for parent Child selector
+          example:::
+            <style>
+         div p{
+            height:200px;
+            width:46%;
+            margin:2%;
+            font-size:40px;
+            float:left;
+            background:skyblue;
+          }
+        </style>
+----------------------------------------------------------------------------------------------------------
+   6. CSS for attribute selector 
+          example::
+           <style>
+            input[type="text"]{
+                height:30px;
+                width:250px;
+                color:red;
+                padding:4px;
+            }
+            input[type="number"]{
+                height:30px;
+                width:250px;
+                color:red;
+                padding:4px;
+            }
+            input[type="email"]{
+                height:30px;
+                width:250px;
+                color:red;
+                padding:4px;
+            }
+        </style>
+-------------------------------------------------------------------------------------------------------
+Main Syntax:::
+       Selector{
+         property:value;
+         property1:value2;
+         property2:value3;
+       }      
+
+    Example:::
+               p{
+                height:200px; 
+                width:200px; 
+                margin:30px; 
+                background:greenyellow; 
+                float:left;
+                font-size:40px;
+                color:red;
+               }
+
+NOte :::: All the html tags are called selector in CSS.
+  
+
+ ------------------------------------------------------------------------------------------------------------
+
+        height- 3type of height
+          height:200px; -- the minimum and maximum height is fixed.
+          min-height:200px -- the minimum height will be fixed if contents are more the height wil increse automatically.
+          height:auto; the min and max both height is based on contents
+  ------------------------------------------------------------------------------------------------------------        
+        width - 4type of width
+         width:100px; it is fixed
+         width-50%  it will fir in all size of window
+         minimum-width:px; % it use to set min width for a specific window
+         max-width:pinternet x;% it use to set max width for a specific window.
+   -------------------------------------------------------------------------------------------------------------     
+   background- 9 type
+        background:red;
+        background-color:red;
+        background-color:rgb(100 , 50, 150 ); three color combination{ red, greee, blue } (0-255)
+        background-color:rgba(red, green, blue, alpha ) (100,50,150,0.5)
+        background-image:url("1.jpg") image name 
+        background-image:linear-gradient(red,block,green);
+        background-image:linear-gradient(to left , red,block,green);
+        background-image:linear-gradient(to right,  red,block,green);
+        background-image:linear-gradient(to top, red,block,green);
+  ----------------------------------------------------------------------------------------------------------------
+       float- It convert block level tag to inline tag
+            - 2 type 
+               --float left - it print from left to right 
+               --float right - it print from right to left
+------------------------------------------------------------------------------------------------------------
+  Margin- it apply space outside of tag.
+         - Margin:auto == it print in middile of area.
+         - Margin:30px - It apply 30px gap from all side.
+         - Margin-top:30px - it apply gap only from top side.
+         - Margin-left:30px - it apply gap only from left side.
+         - Margin-right:30px - it apply gap only from right side.
+         - Margin-battom:30px - it apply gap only from bottom side.
+----------------------------------------------------------------------------------------------------------------
+
+  Padding-- it apply space inside of tag.
+         - Padding-30px --it apply 30px all side 
+         - Padding-top:30px - it apply gap only from left side.
+         - Padding-left:30px - it apply gap only from left side.
+         - Padding-right:30px - it apply gap only from right side.
+         - Padding-battom:30px - it apply gap only from bottom side.
+  ---------------------------------------------------------------------------------------------------  
+   borders::
+       => type of borders::
+              solid
+              dotted
+              dashed
+              double
+              inset
+              outset
+              ridge
+              groove
+   ==>direction of borders
+          border - all side
+          border-top;
+          border-bottom;
+          border-left;
+          border-right;
+  Example::::
+        border:10px dotted red;
+ -------------------------------------------------------------------------------------------------------
+   border-radius::
+           Top-left top-right bottom-right bottom-left 
+           border-radius:50px;
+           border-radius:50%;
+ -----------------------------------------------------------------------------------------------------
+    box- shadow:: 0px 0px 5px black; 
+ -----------------------------------------------------------------------------------------
+  text-transfrom:uppercase; --- complete text upper case.
+  text-ttransform:capitalize; --- only 1st char uppercase in all sentences.
+  ---------------------------------------------------------------------------------------
+  trsnsform:rotate(120deg);
+  ----------------------------------------------------------------------------------
+  position:sticky;
+  position:fixed;
+  --------------------------------------------------------------------------------------
+  transition:
+  top:
+  left:
+  right:
+  bottom:
+  -------------------------------------------------------------------------------------------
+    display:inline 
+           ==> it convert from block level tag to inline tag. but width and hight will not apply.
+    display:inline-block
+           ==> it convert from block level tag to inline tag where height and width will work.
+    display:none;
+            ==> it will  hide the element.
+    display:block;
+           ===> it convert from inline tag to block level tag.
+    display:grid;
+           ===> it will use space of the pag and tags.
+    display:flex;
+              ==> disply:flex;
+                  disply:wrap;
+                  
+   --------------------------------------------------------------------------------------------------------
+        <div> MObile App</div>
+        <div> Logo Design </div>
+        <div> Priniting</div>
+        <div> Web design </div>
+        <div>web development </div>
+        <div> Digital Marketing</div>
+        <div>Education </div>
+        <div> Employment </div>
+        <div> Hire and Deploy </div>
+        <div> Contant writing </div>
+        <div> Business Branding </div>
+------------------------------------------------------------------------------------------------------------
+  Media-query::
+   /* media query start for extra small device*/
+             @media screen and (min-width:1px) and (max-width:600px)
+             {
+                h1{ color:greenyellow; font-size:30px;}
+                #Service{
+                  grid-template-columns:auto;
+                }
+                ul li{
+                  padding:10px 5px 10px;
+                }
+             }
+--------------------------------------------------------------------------------------------
+key-frame::
+ @keyframes mybanner {
+                 25%{background-image:url('2.jpg');}
+                 50%{background-image:url('3.jpg');}
+                 75%{background-image:url('4.jpg');}
+ }
+------------------------------------------------------------------------------------------------                           
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,111 @@
+what are the extenion of html documment/file
+.html 
+.htm
+=> what is structure of html document ?
+         ->  html start to end call "document"
+         ->  html
+                  1.head
+                  ---- Digital marketing and analystics block (monitor the traffic )(include languages )
+                  ---- library section(css, javascript)
+                  2.body(input + output)
+                  ----we display the user ..
+                  html tags with suitable data.
+-----------------------------------------------------------------------------------------
+h1 to h6 it is to create headline of the webpage.
+use h1 min and max 1 time in each page for better user experience and better result is google search 
+------------------------------------------------------------------------------------------------
+p tag---- it use to display test data in webpage
+           p tag text is more then 130 chars
+           do not keep then more 300 words in p tag. user experience may be bad.
+  -------------------------------------------------------------------------------------
+
+  use following tgas if text is less then 130 chars
+  b- blod tag
+  i- italic tag
+  u- underline
+  font- it change text color , font size, font family.
+  ----------------------------------------------------------------------------------------------
+
+ how to link the pages ?
+
+    <a href= ""  title ="" target="" > text to link </a>-----ancor link
+    href= ""  title ="" target=""          
+    =>  it use to set the path that where is next file
+    =>  titile --- it introduce about a tag. why we u create the link, use under the digital marketing .
+    => Target -- it define th location for next file that where it sholud open as new tab, black tab, 
+                             same tab, popup[ windown ete......]
+
+ link1.html
+ link2.html
+--------------------------------------------------------------------------------------------
+type of list in html 
+  -> OL---Order list-----5   numbering(Ms office)
+        type="1"
+        type="A"
+        type="a"
+        type="I" row 
+        type="i" row
+
+  -> UL----unorder list----4 bullets(Ms Office)
+           circle
+           disc
+           squre
+           none
+  -> DL--- Definition list----------no 
+          dt
+          dd
+        
+-------------------------------------------------------------------------
+  Table in html
+        Structure of table
+        1.method
+           -> caption
+           -> tr(table row) 
+           -> th(table heading)
+           -> td(table data)
+
+         2.method
+         => table
+           -> thead - it cover top section table 
+                   =>tr 
+                     -> th
+           -> tbody - it cover middle section of table
+                    =>tr
+                     ->td
+           -> tfoot - it cover bottom section of table   
+                   =>
+                   -> th      
+
+list of proprety in table tr, th,td
+             =>table1.html 
+                -> align(left, center, right) when starting the program using this.
+                -> border(it need number as 1 to 100 )
+                -> cellpadding(it applying sapce inside th and td)
+                -> cellspacing (it applying a space out side of th,td)
+                -> bordercolor-(it appling color on table border)
+                
+            =>table1.html
+               -> height 
+               -> weight
+               -> bgcolor
+            => table2.html
+                -> colspan - it use to combine space of 2 or more th & td
+                -> rowspan - it use to combine space 0f 2 or more tr    
+---------------------------------------------------------------------------
+            List of input tags 
+		=>text 
+		=>number 
+		=>email 
+		=>password 
+		=>file 
+		=>date
+		=>datetime-local 
+		=>textarea
+		=>checkbox
+		=>radio 
+		=>select 
+		=>select with optgroup
+		=>button 
+			=>submit 
+			=>reset 
+   ---------------------------------------------------------------------------------------         

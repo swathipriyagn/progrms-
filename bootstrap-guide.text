@@ -1,0 +1,245 @@
+Bootstrap is library of css.
+It was given by twitter in 2011.
+It has collection of css classes.
+The bootstrap class use to create resposive webpage.
+
+-> Bootstrap grid system devide all type of devices in 6 category based on screen width.
+
+1. Extra Small Device -- 1px to 576px screen width.
+2. Small Device -- 576px to 768px screen width
+3. Medium Device -- 768px to 992px screen width
+4.Large Device -- 992to 1200px screen width
+5.Extra Large device -- 1200px to 1400px screen width
+6. Extra Extra Large device -- >1400px screen width
+
+---------------------------------------------------------------------------------------------
+
+   The bootstrap has given 12 CSS classes for each category
+     1. Extra Small Device -- 1px to 576px screen width
+        .col-1
+        .col-2 
+        .col-3
+        .col-4
+        .col-5
+        .col-6
+        .col-7
+        .col-8
+        .col-9
+        .col-10
+        .col-11
+        .col-12
+
+2. Small Device -- 576px to 768px screen width
+
+          .col-sm-1
+          .col-sm-2
+          .col-sm-3
+          .col-sm-4
+          .col-sm-5
+          .col-sm-6
+          .col-sm-7
+          .col-sm-8
+          .col-sm-9
+          .col-sm-10
+          .col-sm-11
+          .col-sm-12
+
+ 3. Medium Device -- 768px to 992px screen width
+
+           .col-md-1
+           .col-md-2
+           .col-md-3
+           .col-md-4
+           .col-md-5
+           .col-md-6
+           .col-md-7
+           .col-md-8
+           .col-md-9
+           .col-md-10
+           .col-md-11
+           .col-md-12
+
+ 4.Large Device -- 992to 1200px screen width
+
+         .col-lg-1
+         .col-lg-2            
+         .col-lg-3  
+         .col-lg-4 
+         .col-lg-5  
+         .col-lg-6  
+         .col-lg-7  
+         .col-lg-8  
+         .col-lg-9  
+         .col-lg-10  
+         .col-lg-11 
+         .col-lg-12 
+       
+5.Extra Large device -- 1200px to 1400px screen width
+       
+       .col-xl-1
+       .col-xl-2
+       .col-xl-3
+       .col-xl-4
+       .col-xl-5
+       .col-xl-6
+       .col-xl-7
+       .col-xl-8
+       .col-xl-9
+       .col-xl-10
+       .col-xl-11
+       .col-xl-12
+
+6. Extra Extra Large device -- >1400px screen width        
+
+        .col-xxl-1
+        .col-xxl-2
+        .col-xxl-3
+        .col-xxl-4
+        .col-xxl-5
+        .col-xxl-6
+        .col-xxl-7
+        .col-xxl-8
+        .col-xxl-9
+        .col-xxl-10
+        .col-xxl-11
+        .col-xxl-12
+
+****72 classes *****
+
+ while creating page using bootstrap, following these steps ,
+
+    step:1  link to bootstrap.css file head section.
+    step:2  follow body tag.
+    step:3  inside body tag, use following classes.
+             .container --it has margin from left and right side of the screen.
+             .container-fluid -- it has no margin (it cover the full width).
+    step:4  inside container or container-fluid , follow a class
+               .row(height is auto width is 100% of parent).
+    step:5 inside the row , follow colums
+             -> each row minimum 1 colums
+             -> each row maximum 12 colums
+
+-------------------------------------------------------------------------------------------------------------
+   classes for Margin and padding::              (utility classes)
+        keywords::::
+           p-padding
+           m-margin
+           t-top
+           b- buttom
+           s- start(left)
+           e-end(right)
+
+     1 - 4px
+     2 - 8px
+     3 - 16px
+     4 - 24px
+     5 - 48px
+
+  in padding 
+        .p-1 , .p-2, .p-3, .p-4, .p-5  
+        .pt-1 , .pt-2, .pt-3, .pt-4, .pt-5  
+        .pb-1 , .pb-2, .pb-3, .pb-4, .pb-5
+        .ps-1 , .ps-2, .ps-3, .ps-4, .ps-5
+        .pe-1 , .pe-2, .pe-3, .pe-4, .pe-5      
+        
+   in margin
+     .m-1, .m-2, .m-3, .m-4, .m-5
+     .mt-1, .mt-2, .mt-3, .mt-4, .mt-5
+     .mb-1, .mb-2, .mb-3, .mb-4, .mb-5
+     .ms-1, .ms-2, .ms-3, .ms-4, .ms-5
+     .me-1, .me-2, .me-3, .me-4, .me-5
+     
+Classes for background color
+   .bg-danger  - red
+   .bg-info    - skyblue
+   .bg-warning - yellow
+   .bg-primary - blue
+   .bg-sucess - green 
+   .bg-dark    - black
+   .bg- secondary - grey
+   .bg-white   -  white 
+
+  Classes for text color
+   .text-danger  - red
+   .text-info    - skyblue
+   .text-warning - yellow
+   .text-primary - blue
+   .text-sucess - green 
+   .text-dark    - black
+   .text- secondary - grey
+   .text-white   -  white 
+
+Classes for text-aligment
+
+      .text-start       - left align
+      .text-center      - center align
+      .text-end         - right align
+
+ Classes for radius 
+
+        .rounded        - 5%
+        .round-circle   - 50%
+
+  Classes for Shadow
+
+         .Shadow
+         .Shadow-lg
+--------------------------------------------------------------------------------------------------
+    Classes for image
+           .img-fluid - it control width
+           .img-thumbnail - it apply white border with radius on image 
+  -----------------------------------------------------------------------------------------
+  Classes for card
+            .card
+            .card-header
+            .card-body
+            .card-footer
+  ----------------------------------------------------------------------------------------                   
+    Classes for Table
+          .table
+          .table-border
+          .table-hover
+          .table-sm --- padding will be reduced (space is decresed)
+          .table-striped --- color will be defult (color defult)
+ --------------------------------------------------------------------------------------------         
+    Classes for left Navigation 
+            .list-group
+            .list-group-item
+            .active
+  ---------------------------------------------------------------------------------------------                    
+      Classes for input tags.
+            .form-control( text, number,email,password,date, time ,local, textarea , file )
+            .form-select(only select box)
+
+            Diffrent Size::
+                .form-control-sm
+                .form-control-lg
+  --------------------------------------------------------------------------------------------------
+        Classes for button
+            .btn   
+            .btn-danger     - red
+            .btn-info       - skyblue
+            .btn-warning    - yellow
+            .btn-primary    - blue
+            .btn-sucess     - green 
+            .btn-dark       - black
+            .btn- secondary - grey
+            .btn-light      -  white      
+
+   ---------------------------------------------------------------------------------------------            
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+            

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 align="center"><u> Nested Table </u> </h1>
+        <table align="center" cellpadding="10" cellspacing="5" border="2" width="57%">
+            <tr>
+                
+                <th>Header column 1</th>
+                <th>Header column 2</th>
+                <th>Header column 3</th>
+                <th>Header column 4 </th>
+                
+            </tr>
+            <tr>
+                <th>Row 2 - Item 1 </th>
+                <th>Row 2 - Item 2 </th>
+                <th rowspan="2"> Row 2: Nested Table 1 <br/><br/>
+               <table cellpadding="5" cellspacing="4" border="2">
+                <tr>
+                    <th>Row 1 Header </th>
+                    <th>item </th>
+                </tr>
+                 <tr>
+                    <th> Row 2 Header </th>
+                    <th> Item </th>
+                 </tr>
+                 <tr> 
+                    <th> Row 2 Header </th>
+                    <th> item </th>
+                 </tr>
+               
+                </table>
+
+                   </th> 
+               
+                <th>Row 2 - Item  4
+                    A second line </th>
+            </tr>
+            <tr>
+                <th> Row 3: Nested Table 2 <br/><br/>
+                       
+                    <table cellpadding="5" cellspacing="4" border="2">
+                    <tr>
+                        <th>Row 1 Header </th>
+                        <th>item </th>
+                    </tr>
+                     <tr>
+                        <th> Row 2 Header </th>
+                        <th> Item </th>
+                     </tr>
+                     </table>
+
+                </th>
+                <th> Row 3- Item 2 </th>
+                <th rowspan="2"> Row 3- Item 3</th>
+            </tr> 
+            <tr>
+                <th> Row 4 - Item 1 </th>
+                <th> Row 4 - Item 2 </th>
+                <th> Row 4 - Item 3 </th>
+            </tr>
+            <tr>
+                <th colspan="4" align="left"> Row 5 -Last row of outer table </th>
+            </tr>
+        </table>
+
+    </body>
+</html>
